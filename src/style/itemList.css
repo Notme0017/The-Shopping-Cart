@@ -1,0 +1,10 @@
+.item-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #121212;
+    min-height: 100vh;
+    box-sizing: border-box;
+}

@@ -1,0 +1,33 @@
+.item-mini-card{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.item-mini-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.item-mini-card:focus-visible{
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
+}
+
+.item-mini-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.item-mini-card .title-mini-card{
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+}

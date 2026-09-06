@@ -1,0 +1,110 @@
+.item-detail-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    color:#ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.item-detail-card img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.item-detail-card h3{
+    margin: 1rem ;
+    font-size: 1.4rem;
+}
+
+.item-detail-card .price-and-rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem 0;
+}
+
+.item-detail-card .price{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.item-detail-card .rate{
+    font-size: 0.9rem;
+    color: #f5c518;
+}
+
+.item-detail-card .count{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 1rem 0;
+}
+
+.item-detail-card .count input{
+    width: auto;
+    padding: 0.4rem;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.item-detail-card .buttons-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-detail-card .buttons-section button{
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.item-detail-card .buttons-section button:first-child{
+    border-radius: 6px 6px 0 0;
+}
+
+.item-detail-card .buttons-section button:last-child{
+    border-radius: 0 0 6px 6px;
+}
+
+.item-detail-card .add-to-cart-btn{
+    margin: 1rem 1rem 0;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.item-detail-card .add-to-cart-btn:hover{
+    background-color: #43a047;
+}
+
+.item-detail-card .close-btn{
+    margin: 0.75rem 1rem 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #555;
+    color:white;
+    cursor: pointer;
+}
+.item-detail-card .close-btn:hover{
+    background-color: #666;
+}
