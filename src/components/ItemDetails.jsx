@@ -1,5 +1,14 @@
 import '../style/itemDetails.css'
+import { useNavigate } from 'react-router-dom'
+
 const ItemDetails = ({item, onCountChange, onClose, onAddToCart, onIncrement, onDecrement, error, loading}) =>{
+    const navigate = useNavigate();
+
+    const handleAddToCart = () =>{
+        onAddToCart(item);
+        navigate("/cart");
+    }
+
     if(loading) return <p>Loading...</p>
     if(error) return <p>We have encountered a network error.</p>
     return(
@@ -24,7 +33,7 @@ const ItemDetails = ({item, onCountChange, onClose, onAddToCart, onIncrement, on
                     <button type="button" onClick={() => onIncrement(item.id)}>+</button>
                 </section>
             </section>
-            <button className="add-to-cart-btn" type="button" onClick={() => onAddToCart(item)}>Add To Cart</button>
+            <button className="add-to-cart-btn" type="button" onClick={handleAddToCart}>Add To Cart</button>
             <button className='close-btn' type="button" onClick={onClose}>X</button>
         </div>
     )
